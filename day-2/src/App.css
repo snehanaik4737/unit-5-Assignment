@@ -1,8 +1,8 @@
 .App {
-  text-align: center;
+  text-align:left;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +35,18 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.App {
+margin-left: 10%;
 }
+/* #square:nth-child(1) {
+  list-style-type: square;
+} */
+/* #square:nth-child(4) {
+  list-style-type:decimal-leading-zero;
+} */
+/* #square:nth-child(4){
+  list-style-type:circle;
+} */
