@@ -38,15 +38,45 @@
 } */
 
 
-.App {
+.bullets {
 margin-left: 10%;
 }
-/* #square:nth-child(1) {
-  list-style-type: square;
-} */
-/* #square:nth-child(4) {
-  list-style-type:decimal-leading-zero;
-} */
-/* #square:nth-child(4){
-  list-style-type:circle;
-} */
+
+.nav{
+ 
+  width:80%;
+  height:50px;
+  background-color: black;
+  margin:auto;
+  display:flex;
+  justify-content: space-around;
+}
+
+.square{
+  list-style:square ;
+}
+.circle{
+  list-style: circle;
+}
+#logo{
+  color:white;
+  line-height: 10px;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+  margin-left: 30px;
+ 
+}
+#links{
+  margin-top: 10px;
+}
+#buttn{
+  
+  background-color: rgb(46, 203, 203);
+  width:150px;
+  border-radius:10px;
+  margin-top: 10px;
+  padding: 5px;
+}
