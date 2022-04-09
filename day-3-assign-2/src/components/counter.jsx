@@ -10,7 +10,7 @@ import "./counter.css"
      const handleChange=(value)=>{
       setCounter(counter+value)
      }
-
+   
      const doubleValue=()=>{
         setCounter(counter*2)
      }

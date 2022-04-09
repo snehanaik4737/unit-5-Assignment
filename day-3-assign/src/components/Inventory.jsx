@@ -5,11 +5,26 @@ export const Inventory = () => {
     books: 10,
     notebooks: 13,
     pens: 40,
-  });
-    // Create add and remove functions here that changes the
-    // state.
-
     
+
+  });
+
+  
+    // Create add and remove functions here that changes the
+    // state. 
+  
+    const handleChange=(key,value)=>{
+     if(inv[key]<=0){
+       return;
+     }
+      inv[key]=inv[key]+value;
+      setInv({ books: inv.books,
+      notebooks: inv.notebooks,
+       pens: inv.pens,
+      })
+     }
+
+  
   return (
     <div
       style={{
@@ -21,32 +36,34 @@ export const Inventory = () => {
         width: "400px",
       }}
     >
+     
       <div className="items">
         <span>Books: </span>
-        <button className="circlularButton">+</button>
-        <button className="circlularButton">-</button>
+        <button onClick={()=>handleChange("books",1)}className="circlularButton">+</button>
+        <button  onClick={()=>handleChange("books",-1)}className="circlularButton">-</button>
         <span>{inv.books}</span>
       </div>
       <div className="items">
         <span>Notebooks: </span>
-        <button className="circlularButton">+</button>
-        <button className="circlularButton">-</button>
+        <button onClick={()=>handleChange("notebooks",1)}className="circlularButton">+</button>
+        <button onClick={()=>handleChange("notebooks",-1)} className="circlularButton">-</button>
         <span>{inv.notebooks}</span>
+   
       </div>
       <div className="items">
         <span>Pen: </span>
-        <button className="circlularButton">+</button>
-        <button className="circlularButton">-</button>
+        <button onClick={()=>handleChange("pens",1)}className="circlularButton">+</button>
+        <button  onClick={()=>handleChange("pens",-1)}className="circlularButton">-</button>
         <span>{inv.pens}</span>
       </div>
       <div className="items">
         <span>Ink Pens: </span>
-        <button className="circlularButton">+</button>
-        <button className="circlularButton">-</button>
+        <button  onClick={()=>handleChange("inkpens",1)}className="circlularButton">+</button>
+        <button  onClick={()=>handleChange("inkpens",-1)} className="circlularButton">-</button>
         <span>{inv.inkpens}</span>
       </div>
             {/*calculate total and show it*/}
-      total: {0}
+      total: {inv.books+inv.notebooks+inv.pens}
     </div>
   );
 };
