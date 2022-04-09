@@ -1,0 +1,60 @@
+#conterdiv{
+
+    height:40%;
+    width:40%;
+    border:1px solid black;
+    margin:auto;
+    padding: 10px;
+    margin-bottom: 10%;
+    display: flex;
+   justify-content: center;
+   font-size: larger;
+   font-weight: bolder;
+   background-color:azure;
+   border-radius: 15px;
+
+    
+
+}
+
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+
+#counter{
+    width:40%;
+    height:120%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 30px;
+    background-color:goldenrod;
+  
+   
+}
+
+#update{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+button{
+    padding:10px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: aquamarine;
+    border:none;
+
+
+}
+
+button:hover{
+    font-style:oblique;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

@@ -7,15 +7,12 @@ function App() {
       {name:"Apple",style:"circle"}];
 
 
- const links =[{name:"Services",link:""},
- {
-  name:"Projects",link:""},
-  {
-name:"About",link:""
-  }
+ const links =[
+   {name:"Services",link:""},
+   {name:"Projects",link:""},
+  {name:"About",link:"" }
  ]
 
-  
   return (
   <div className="App">
 
@@ -29,11 +26,11 @@ name:"About",link:""
        })}
      </div>
 
-<div>
-  <Button/>
-</div>
-    
+    <div>
+      <Button/>
     </div>
+    
+   </div>
 
 
     <div className="bullets">
@@ -66,7 +63,7 @@ name:"About",link:""
  }
 
   function Links(props){
-   // console.log(props)
+    console.log(props)
     return <a id="href" href={props.link.link}>{props.link.name}</a>
   }
 
