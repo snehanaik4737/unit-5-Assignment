@@ -8,6 +8,8 @@ export const Inventory = () => {
   });
     // Create add and remove functions here that changes the
     // state.
+
+    
   return (
     <div
       style={{
