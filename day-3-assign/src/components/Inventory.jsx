@@ -5,6 +5,7 @@ export const Inventory = () => {
     books: 10,
     notebooks: 13,
     pens: 40,
+    inkpens:30,
   });
 
   // const [invent ,setInvent]= useState({
@@ -38,6 +39,7 @@ export const Inventory = () => {
       setInv({ books: inv.books,
       notebooks: inv.notebooks,
        pens: inv.pens,
+       inkpens:inv.inkpens,
       })
      }
 
