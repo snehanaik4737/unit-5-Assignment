@@ -7,6 +7,24 @@ export const Inventory = () => {
     pens: 40,
   });
 
+  // const [invent ,setInvent]= useState({
+  //   inkpens:0
+  // })
+
+  // const handle=(key,value)=>{
+  //   // console.log(value)
+  //   if(invent[key]<=0 && value ===-1){
+  //     return;
+  //   }
+  //    invent[key]=invent[key]+value;
+  //    setInvent({ 
+  //     inkpens: invent.inkpens,
+   
+  //    })
+  //   }
+
+
+
   
     // Create add and remove functions here that changes the
     // state. 
