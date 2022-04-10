@@ -5,8 +5,6 @@ export const Inventory = () => {
     books: 10,
     notebooks: 13,
     pens: 40,
-    
-
   });
 
   
@@ -14,7 +12,8 @@ export const Inventory = () => {
     // state. 
   
     const handleChange=(key,value)=>{
-     if(inv[key]<=0){
+     // console.log(value)
+     if(inv[key]<=0 && value ===-1){
        return;
      }
       inv[key]=inv[key]+value;
@@ -25,7 +24,7 @@ export const Inventory = () => {
      }
 
   
-  return (
+   return (
     <div
       style={{
         border: "1px solid black",
