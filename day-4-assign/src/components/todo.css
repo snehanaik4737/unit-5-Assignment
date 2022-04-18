@@ -1,0 +1,25 @@
+/* .round{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+} */
+
+
+.green{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color:darkgreen;
+
+}
+
+.red{
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-color: rgb(240, 24, 24);
+
+}
+button{
+   margin-bottom:15px ;
+}

@@ -1,0 +1,67 @@
+{
+  "form": [
+    {
+      "name": "SNEHA NAIK",
+      "address": "#41/1,Nagur,Yattinabail,Mirjan., Sub District: Kumta, District: Uttara Kannada",
+      "age": "12",
+      "department": "finance",
+      "salary": "12345",
+      "marrital_state": "on",
+      "id": 1
+    },
+    {
+      "0": {
+        "name": "SNEHA NAIK",
+        "address": "#41/1,Nagur,Yattinabail,Mirjan., Sub District: Kumta, District: Uttara Kannada",
+        "age": "12",
+        "department": "finance",
+        "salary": "12345",
+        "marrital_state": "on",
+        "id": 1
+      },
+      "name": "SNEHA NAIK",
+      "address": "#41/1,Nagur,Yattinabail,Mirjan., Sub District: Kumta, District: Uttara Kannada",
+      "age": "34546",
+      "department": "human_resource",
+      "salary": "34565",
+      "marrital_state": "on",
+      "id": 2
+    },
+    {
+      "0": {
+        "name": "SNEHA NAIK",
+        "address": "#41/1,Nagur,Yattinabail,Mirjan., Sub District: Kumta, District: Uttara Kannada",
+        "age": "12",
+        "department": "finance",
+        "salary": "12345",
+        "marrital_state": "on",
+        "id": 1
+      },
+      "1": {
+        "0": {
+          "name": "SNEHA NAIK",
+          "address": "#41/1,Nagur,Yattinabail,Mirjan., Sub District: Kumta, District: Uttara Kannada",
+          "age": "12",
+          "department": "finance",
+          "salary": "12345",
+          "marrital_state": "on",
+          "id": 1
+        },
+        "name": "SNEHA NAIK",
+        "address": "#41/1,Nagur,Yattinabail,Mirjan., Sub District: Kumta, District: Uttara Kannada",
+        "age": "34546",
+        "department": "human_resource",
+        "salary": "34565",
+        "marrital_state": "on",
+        "id": 2
+      },
+      "name": "SNEHA NAIK",
+      "address": "#41/1,Nagur,Yattinabail,Mirjan., Sub District: Kumta, District: Uttara Kannada",
+      "age": "1324",
+      "department": "human_resource",
+      "salary": "1243",
+      "marrital_state": "on",
+      "id": 3
+    }
+  ]
+}
