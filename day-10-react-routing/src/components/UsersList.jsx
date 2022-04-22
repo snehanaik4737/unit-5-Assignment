@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
      const[users,setUsers]=useState([]);
      useEffect(()=>{
 
-         axios.get("https://reqres.in/api/users/").then(({data})=>{
+         axios.get("https://reqres.in/api/users").then(({data})=>{
              setUsers(data.data);
          });
      },[]);
