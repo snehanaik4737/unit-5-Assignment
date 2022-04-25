@@ -3,12 +3,13 @@ export const Coupon = () => {
       <>
         <div
           style={{
-            backgroundColor: "#ff8c8c",
+            backgroundColor:"#00CED1",
+            height:"30px",
             textAlign: "center",
             color: "black",
           }}
         >
-          Use Coupon "Masai-30" to get 30% discount
+          Use Coupon "Masai-20" to get 20% discount
         </div>
       </>
     );

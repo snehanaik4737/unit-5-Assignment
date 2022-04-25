@@ -66,13 +66,14 @@ export const Navbar = () => {
   ];
   return (
     <>
-      <div style={{ backgroundColor: "#fbd9f5", padding: "5px" }}>
+      <div style={{ backgroundColor: "#fbd9f5", padding: "5px", height:"40px",lineHeight:"35px" }}>
         {navItems.map((e, i) => (
           <Link
             key={i}
             to={e.to}
             style={{
               margin: "15px",
+             
               textDecoration: "none",
               fontWeight: "bold",
               color: "Black",
