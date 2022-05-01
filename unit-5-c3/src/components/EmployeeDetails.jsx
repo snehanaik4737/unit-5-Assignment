@@ -13,9 +13,9 @@ export const EmployeeDetails = () => {
 
       useEffect(()=>{
       axios.get(`http://localhost:8080/employee/${id}`).then(({data})=>{
-      
+         console.log(data)
           setemployee(data.data);
-          console.log(employee)
+        
       });
       },[]);
 

@@ -32,7 +32,7 @@ export const EmployeeList = () => {
       {employees.map((e) => (
         <div key={e.id} className="employee_card">
          
-          <Link to={isAuth? `/employee/${e.id}`:"/login"}>
+          <Link to={isAuth? "/login":`/employee/${e.id}`}>
             <img className="employee_image" src={e.image} />
             <br />
             <span className="employee_name">{e.employee_name}</span>

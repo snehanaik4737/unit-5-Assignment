@@ -15,7 +15,7 @@ export const Login = () => {
       console.log(res)
       setUser(res.data.token)
       handleAuth(true);
-      navigate(-1,{replace:true});
+      navigate(-2,{replace:true});
 
     }
     
