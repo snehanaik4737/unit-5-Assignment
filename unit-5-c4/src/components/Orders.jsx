@@ -38,14 +38,14 @@ export const Orders = () => {
               </tr>
             </thead>
             <tbody>
-              {user.map((e)=>(
+            
 
               <tr className="orders-row">
-                <td className="id">{e.id}</td>
-                <td className="problem">{e.problem}</td>
-                <td className="owner">{e.owner_name}</td>
-                <td className="status">{e.brand}</td>
-                <td className="cost">{e.cost}</td>
+                <td className="id"></td>
+                <td className="problem"></td>
+                <td className="owner"></td>
+                <td className="status"></td>
+                <td className="cost"></td>
                 <td className="change-status">
                   {/* Show select dropdown only if status is Not Accepted */}
                   <select className="changeStatus" name="changeStatus">
@@ -61,7 +61,7 @@ export const Orders = () => {
                   <button>Accept</button>
                 </td>
               </tr>
-              ))}
+        
             </tbody>
           </table>
         </div>
