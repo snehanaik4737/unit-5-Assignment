@@ -14,7 +14,7 @@ switch(type){
    //redux stores everything  in memory
 //   case ADD_TODO: return {...store,todos:[...store.todos,payload]};
   //this is while using db.json
-  case ADD_TODO: return {...store,todos:payload};
+  case ADD_TODO : return {...store,todos:payload};
 
   case SORT : return {...store,todos:[...store.todos].sort((a,b)=>a[payload]>b[payload] ? 1 :a[payload]<b[payload] ? -1: 0)}
 

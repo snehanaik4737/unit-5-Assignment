@@ -56,9 +56,9 @@ return <div>
     <button onClick={handleAdd}>add todo</button>
     {todos.filter(todo=>todo.title.includes(filter)).map((t)=>(
         <div key ={t.title}>{t.id}.{t.title}-{t.status? "Done":"Not done"}
-        {todos.map((t)=>(
+        {/* {todos.map((t)=>(
             <div key={t.title}>{t.title}</div>
-        ))}
+        ))} */}
        
        {/* //this is for deleting */}
         <button onClick={()=>{
