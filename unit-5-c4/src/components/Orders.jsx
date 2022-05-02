@@ -1,16 +1,18 @@
 import { useEffect,useState } from "react";
 
-import axios from "axios"
+
 export const Orders = () => {
     //  Get all data when admin logs in and populate it
     // store it in redux
 
     const [user,setUser]=useState({})
     useEffect(()=>{
-    axios.get(`https://reqres.in/api/orders`).then(({data})=>{
-        setUser(data.data);
-        console.log(user)
-    });
+     
+        fetch("http://localhost:8080/orders").then(x=>x.json()).then(data=>{
+          console.log(data)
+           setUser(data);
+        })
+      
     },[]);
   
     return (
@@ -36,12 +38,14 @@ export const Orders = () => {
               </tr>
             </thead>
             <tbody>
+              {user.map((e)=>(
+
               <tr className="orders-row">
-                <td className="id">{user.id}</td>
-                <td className="problem">{user.problem}</td>
-                <td className="owner">{user.owner_name}</td>
-                <td className="status">{user.brand}</td>
-                <td className="cost">{user.const}</td>
+                <td className="id">{e.id}</td>
+                <td className="problem">{e.problem}</td>
+                <td className="owner">{e.owner_name}</td>
+                <td className="status">{e.brand}</td>
+                <td className="cost">{e.cost}</td>
                 <td className="change-status">
                   {/* Show select dropdown only if status is Not Accepted */}
                   <select className="changeStatus" name="changeStatus">
@@ -57,6 +61,7 @@ export const Orders = () => {
                   <button>Accept</button>
                 </td>
               </tr>
+              ))}
             </tbody>
           </table>
         </div>
