@@ -2,8 +2,9 @@
     width:30%;
     margin:auto;
     padding:1rem;
-    border:1px solid black;
-    margin-bottom:0.25rem;
+   border-bottom: 1px solid gray;
+   border-bottom-left-radius: 1rem;
+   border-bottom-right-radius: 1rem;
     gap:1rem;
 }
 .image{
