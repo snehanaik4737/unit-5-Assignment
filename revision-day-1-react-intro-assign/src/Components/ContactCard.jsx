@@ -1,17 +1,18 @@
 import { useState } from 'react'
-
- export const ContactCard=({id,name,last_name,phone,url,onHandle,phoneDiv})=>{
+import styles from "./ContactCard.module.css"
+ export const ContactCard=({id,name,last_name,phone,url,onHandle,phoneDiv,flag})=>{
 
   return(
-    <div style={{width:"30%",margin:"auto",padding:"1rem",border:"1px solid black",marginBottom:"0.25rem",gap:"1rem"}}>
+    <div className={styles.maindiv}>
    
-  <div onClick={()=>onHandle(id)} style={{display:"flex",width:"100%"}}>
+   <div onClick={()=>onHandle(id)} className={styles.subdiv} >
 
-      <div style={{width:"10%",padding:"2%"}}> <img style={{width:"100%"}} src={url}></img></div>
+      <div className={styles.image} > <img style={{width:"100%"}} src={url}></img></div>
     <div style={{marginTop:"15px"}}>{name}{" "}{last_name}</div>
 
   </div>
-    {phoneDiv? (<div>{phone}</div>):("")}
+    
+    {phoneDiv===id && flag ? (<p>{phone}</p>):("")}
 
    
     </div>

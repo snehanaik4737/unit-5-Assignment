@@ -36,12 +36,15 @@ export const ContactList=()=> {
 
   const [contactList,setContactList] =useState(initState);
 
-  const [phoneDiv,setPhoneDiv] =useState(false);
+  const [phoneDiv,setPhoneDiv] =useState(0);
 
+  const [flag,setFlag]=useState(false)
   const handle=(id)=>{
+   // console.log(id)
     setPhoneDiv(
-     !phoneDiv
-    )   
+     id
+     )
+     setFlag(!flag)   
   }
 console.log(phoneDiv)
   return (
@@ -50,7 +53,7 @@ console.log(phoneDiv)
      {contactList.map((item)=>(
        <div key={item.id}>
 
-         <ContactCard id={item.id}name={item.first_name} last_name={item.last_name} phone={item.phone} url={item.url} onHandle={handle} phoneDiv={phoneDiv}/>
+         <ContactCard id={item.id}name={item.first_name} last_name={item.last_name} phone={item.phone} url={item.url} onHandle={handle} phoneDiv={phoneDiv} flag={flag}/>
        </div>
      ))}
     </div>

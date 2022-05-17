@@ -8,6 +8,7 @@ import { useState } from 'react'
   const [phone,setPhone] =useState("")
 
  const handleClick=()=>{
+ 
   if(props.handleClick) props.handleClick(text,phone);
   setText("");
   setPhone("");
