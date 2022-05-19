@@ -53,7 +53,7 @@ export const Github = () => {
     } else if (e.target.value === "des") {
       const d = [...data].sort((a, b) => {
         console.log("b.login", b.login, "a.login", a.login);
-        return a["login"] < b["login"] ? 1 : a["login"] > b["login"] ? -1 : 0;
+        return a.login < b.login? 1 : a.login > b.login ? -1 : 0;
       });
       console.log("d", d);
       setData(d);
