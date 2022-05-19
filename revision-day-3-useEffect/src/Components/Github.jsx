@@ -55,7 +55,7 @@ const getGithubUsers=(q="albseb511",page=1)=>{
       if(e.target.value==="des"){
 
         const d= [...data].sort((a,b)=>{
-            console.log("b.login",b.login,"a.login",a.login)
+          // console.log("b.login",b.login,"a.login",a.login)
             return  a.login>b.login ? 1 :a.login<b.login ? -1: 0
              })
             console.log("d",d)
@@ -89,10 +89,10 @@ console.log("data",data)
     <GithubCard key={item.id}{...item}/>
     
     )} */}
-   {data.map((item)=>{
+   {data.map((item)=>[
        <GithubCard key={item.id} avatar_url={item.avatar_url} login={item.login}/> 
       
-})}
+   ])}
     <div>
 
         <button disabled={page==1} onClick={()=>setPage(page-1)}>Prev</button>
