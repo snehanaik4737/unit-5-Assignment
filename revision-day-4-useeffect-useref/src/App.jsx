@@ -1,13 +1,20 @@
 import { useEffect, useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import { Counter, InputBox } from './Examples/useRef'
+import { ChatAppUseRef } from './Examples/ChatAppUseRef'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-    <ChatUp/>
+    {/* <ChatUp/> */}
+
+   {/* <ChatAppUseRef/> */}
+    {/* <Counter/> */}
+
+    <InputBox/>
     </div>
   )
 }

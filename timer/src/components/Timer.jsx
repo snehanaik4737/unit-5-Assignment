@@ -34,21 +34,21 @@ function Timer() {
         <div className="buttons">
           <button
             onClick={() => setTimerOn(true)}
-            className="button_slide"
+            className="button-73"
           >
             Start
           </button>
           <button
             onClick={() => setTimerOn(false)}
-            className="button_slide"
+            className="button-73"
           >
             Stop
           </button>
 
-          <button onClick={() => setTimerOn(true)} className="button_slide">
+          <button onClick={() => setTimerOn(true)} className="button-73">
             Resume
           </button>
-          <button onClick={() => setTimeer(0)} className="button_slide">
+          <button onClick={() => setTimeer(0)} className="button-73">
             Reset
           </button>
         </div>
